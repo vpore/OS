@@ -17,7 +17,7 @@ class MemoryBlock {
         choice();
     }
     
-    void choice() {
+    void choice() {  
         bestFit();
     }
 
