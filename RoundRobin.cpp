@@ -60,7 +60,7 @@ void ganttChart(){
 
 void Calculate(){
     cout<<"\n\nProcess\t\tBurst Time\tWaiting Time\tTurnaround Time\n";
-    for(auto i : ganttchart){
+    for(auto i : burstTime){
         TAT+=i[0];
         cout<<"  P"<<i[1]<<"\t\t"<<i[0]<<"s\t\t"<<WT<<"s\t\t"<<TAT<<"s\n";
         WT+=i[0];
@@ -73,6 +73,6 @@ void Calculate(){
 int main(){
     processInput();
     ganttChart();
-    //Calculate();
+    Calculate();
     return 0;
 }
